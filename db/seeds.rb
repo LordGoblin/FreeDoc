@@ -24,6 +24,3 @@ end
 10.times do
   appointment_random = Appointment.create!(date:Faker::Date.forward(23) , doctor_id: rand(1..Doctor.count), patient_id: rand(1..Patient.count), city_id: rand(1..City.count))
 end
-
-
-puts "Doctors, Patients, Appointments, Cities and Specialties : GENERATED "
